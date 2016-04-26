@@ -4,7 +4,7 @@ import sys
 
 def intersect(fileset):
     fset = set(open(fileset[0]))
-    for f in fileset[2:]:
+    for f in fileset[1:]:
         fd = open(f)
         fset &= set(fd)
     # print(list(fset))
