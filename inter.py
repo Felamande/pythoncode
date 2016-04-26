@@ -3,10 +3,10 @@ import sys
 
 
 def intersect(fileset):
-    fset = set(open(fileset[0]).readlines())
+    fset = set(open(fileset[0]))
     for f in fileset[2:]:
         fd = open(f)
-        fset &= set(fd.readlines())
+        fset &= set(fd)
     # print(list(fset))
     return fset
 
