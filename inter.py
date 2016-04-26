@@ -17,7 +17,7 @@ def main():
     except Exception as e:
         print(e)
         return
-    for line in list(inter):
+    for line in inter:
         print(line,end="")
 
 if __name__ == '__main__':
