@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import sys
 
 
@@ -18,7 +18,7 @@ def main():
         print(e)
         return
     for line in inter:
-        print(line,end="")
+        print(line.strip())
 
 if __name__ == '__main__':
     sys.exit(int(main() or 0))
